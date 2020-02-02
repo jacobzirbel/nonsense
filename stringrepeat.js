@@ -1,16 +1,14 @@
 ///////////////////////// EXECUTION /////////////////////////
 let input = `
 
-this this this is this is is is a this is test is a test is a
+this is a test this is a test
   `;
 
 let wordsArray = buildInputArray(input);
 
-console.log(method1(wordsArray));
-//findMatches(wordsArray);
-// let time1 = timeFunction(theThing1);
-// let time2 = timeFunction(findMatches);
-// console.log(time1, time2);
+let time1 = timeFunction(method1);
+let time2 = timeFunction(method2);
+console.log(time1, time2);
 
 ///////////////////////// METHOD 1 /////////////////////////
 
@@ -80,36 +78,49 @@ function contains(array, element, index) {
 
 ///////////////////////// METHOD 2 /////////////////////////
 
-function iPair(i, j, word) {
-  this.i = i;
-  this.j = j;
-  this.phrase = word + " ";
+function method2(array) {
+  let pairs = findWordMatches(array);
+  let fullMatches = buildMatches(pairs, array);
+  let finalResults = cleanUpResults(fullMatches);
+  return finalResults;
 }
 
-function findWordMatches(mainArray) {
+function findWordMatches(array) {
   let start = 0;
-  let is = [];
-  for (let i = start; i < mainArray.length; i++) {
-    for (let j = i + 1; j < mainArray.length; j++) {
-      if (mainArray[i] === mainArray[j]) {
-        is.push(new iPair(i, j, mainArray[i]));
+  let pairs = [];
+  for (let i = start; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] === array[j]) {
+        pairs.push(new iPair(i, j, array[i]));
       }
     }
   }
+  return pairs;
 }
 
-function buildMatches() {}
-
-function checkNextWord(match, i, j, r) {
-  if (wordsArray[match.inds[i].end + 1] === wordsArray[match.inds[j].end + 1]) {
-    r += " " + wordsArray[match.inds[i].end + 1];
-    match.inds[i].end++;
-    match.inds[j].end++;
-    checkNextWord(match, i, j, r);
-  } else {
-    results.push(r);
-    return false;
+function buildMatches(pairs, array) {
+  let ret = [];
+  for (let i = 0; i < pairs.length; i++) {
+    let r = array[pairs[i].I];
+    let match = checkNextWord(pairs[i].I, pairs[i].J, array, r);
+    ret.push(match + " ");
   }
+  return ret;
+}
+
+function checkNextWord(i, j, array, r) {
+  while (array[i + 1] === array[j + 1]) {
+    i++;
+    j++;
+    r += " " + array[i];
+  }
+  return r;
+}
+
+function iPair(i, j, word) {
+  this.I = i;
+  this.J = j;
+  this.phrase = word + " ";
 }
 
 ///////////////////////// GENERAL /////////////////////////
@@ -120,20 +131,37 @@ function buildInputArray(input) {
   input = input.replace(/[\n]/g, " ");
   input = input.replace(/\s{2,}/g, " ");
   input = input.split(" ");
+  input = input.filter(e => e);
   return input;
 }
 
 function cleanUpResults(array) {
   let uniques = getUnique(array);
   uniques.sort(function(a, b) {
-    return b.length - a.length;
+    return a.length - b.length;
   });
   let final = removePartials(uniques);
+  final.sort(function(a, b) {
+    return b.length - a.length;
+  });
   return final;
 }
 
 function removePartials(array) {
-  return array;
+  let ret = [];
+  for (let i = 0; i < array.length; i++) {
+    let include = true;
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[j].includes(array[i])) {
+        include = false;
+        break;
+      }
+    }
+    if (include) {
+      ret.push(array[i]);
+    }
+  }
+  return ret;
 }
 
 function getUnique(array) {
@@ -148,7 +176,7 @@ function getUnique(array) {
 
 function timeFunction(fn) {
   let s = new Date();
-  fn(wordsArray);
+  console.log(fn(wordsArray));
   let e = new Date();
   return e - s;
 }
