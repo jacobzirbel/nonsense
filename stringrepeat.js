@@ -1,17 +1,12 @@
-let input = `this is a test
-this is  a only a test
-this is not a test
-this is a test
-there is a test not
-
+let input = `
 
 
   `;
 input = input.toUpperCase();
-input = input.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"]/g, "");
+input = input.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"\[\]]/g, "");
 input = input.replace(/[\n]/g, " ");
 input = input.replace(/\s{2,}/g, " ");
-
+console.log(input.length);
 let wordsArray = input.split(" ");
 let wordMatches = [];
 let results = [];
@@ -132,9 +127,6 @@ function findMatches(mainArray) {
   let is = [];
   for (let i = start; i < mainArray.length; i++) {
     for (let j = i + 1; j < mainArray.length; j++) {
-      if (i == 10 || i == 15 || j == 10 || j == 15) {
-        let debug;
-      }
       if (mainArray[i] === mainArray[j]) {
         let addNewMatch = true;
         wordMatches.forEach(e => {
@@ -222,6 +214,6 @@ function timeFunction(fn) {
 
 ///theThing1(wordsArray);
 //findMatches(wordsArray);
-let time1 = timeFunction(theThing1);
-//let time2 = timeFunction(findMatches);
-//console.log(time1, time2);
+// let time1 = timeFunction(theThing1);
+// let time2 = timeFunction(findMatches);
+// console.log(time1, time2);
