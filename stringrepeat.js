@@ -81,14 +81,24 @@ function already(phrase, ret) {
 
 function theThing1(array) {
   let ret = [];
+  let match = true;
+  for (let i = 1; match; i++) {
+    let sameBef;
+    let sameAft;
 
-  for (let i = array.length / 2; i > 1; i--) {
+    sameBef = ret.length;
+
     let sames = comparePhrases(getPhrases(i, wordsArray));
+
     for (let j = 0; j < sames.length; j++) {
       // if (!already(sames[j], ret)) {
       ret.push(sames[j]);
 
       // }
+    }
+    sameAft = ret.length;
+    if (sameAft === sameBef) {
+      match = false;
     }
   }
   sResults = getUnique(ret);
@@ -213,5 +223,5 @@ function timeFunction(fn) {
 ///theThing1(wordsArray);
 //findMatches(wordsArray);
 let time1 = timeFunction(theThing1);
-let time2 = timeFunction(findMatches);
-console.log(time1, time2);
+//let time2 = timeFunction(findMatches);
+//console.log(time1, time2);
