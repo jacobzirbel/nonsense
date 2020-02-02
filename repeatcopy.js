@@ -75,7 +75,7 @@ function already(phrase, ret) {
   return rete;
 }
 
-function theThing1(array) {
+function method1(array) {
   let ret = [];
   let match = true;
   for (let i = 1; match; i++) {

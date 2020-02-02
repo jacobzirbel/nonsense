@@ -1,22 +1,42 @@
+///////////////////////// EXECUTION /////////////////////////
 let input = `
 
 this this this is this is is is a this is test is a test is a
   `;
 
+let wordsArray = buildInputArray(input);
 
-let wordMatches = [];
-let results = [];
-
-function buildInput(input) {
-  input = input.toUpperCase();
-  input = input.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"\[\]]/g, "");
-  input = input.replace(/[\n]/g, " ");
-  input = input.replace(/\s{2,}/g, " ");
-  input = input.split(" ");
-  return input;
-}
+console.log(method1(wordsArray));
+//findMatches(wordsArray);
+// let time1 = timeFunction(theThing1);
+// let time2 = timeFunction(findMatches);
+// console.log(time1, time2);
 
 ///////////////////////// METHOD 1 /////////////////////////
+
+function method1(inputArray) {
+  let ret = [];
+  let match = true;
+  for (let i = 1; match; i++) {
+    let before = ret.length;
+    let phrasesOfiLength = getPhrases(i, inputArray);
+    let matches = comparePhrases(phrasesOfiLength);
+
+    // add matches of length i to final
+    for (let i = 0; i < matches.length; i++) {
+      ret.push(matches[i]);
+    }
+
+    //only continue if there is a new match
+    let after = ret.length;
+    if (after === before) {
+      match = false;
+    }
+  }
+
+  let finalResults = cleanUpResults(ret);
+  return finalResults;
+}
 
 function getPhrases(n, array) {
   // returns all sets of words with n words
@@ -58,43 +78,12 @@ function contains(array, element, index) {
   }
 }
 
-function theThing1(array) {
-  let ret = [];
-  let match = true;
-  for (let i = 1; match; i++) {
-    let sameBef;
-    let sameAft;
-    sameBef = ret.length;
-    let sames = comparePhrases(getPhrases(i, wordsArray));
-    for (let j = 0; j < sames.length; j++) {
-      ret.push(sames[j]);
-    }
-    sameAft = ret.length;
-    if (sameAft === sameBef) {
-      match = false;
-    }
-  }
-  let finalResults = cleanUpResults(ret);
-  return finalResults;
-}
-
 ///////////////////////// METHOD 2 /////////////////////////
 
 function iPair(i, j, word) {
   this.i = i;
   this.j = j;
   this.phrase = word + " ";
-}
-function Match(word, i1, i2) {
-  this.word = word;
-  this.length = 1;
-  this.inds = [];
-  if (i1 !== undefined) {
-    this.inds.push(new Inds(i1));
-    if (i2) {
-      this.inds.push(new Inds(i2));
-    }
-  }
 }
 
 function findWordMatches(mainArray) {
@@ -125,6 +114,15 @@ function checkNextWord(match, i, j, r) {
 
 ///////////////////////// GENERAL /////////////////////////
 
+function buildInputArray(input) {
+  input = input.toUpperCase();
+  input = input.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()"\[\]]/g, "");
+  input = input.replace(/[\n]/g, " ");
+  input = input.replace(/\s{2,}/g, " ");
+  input = input.split(" ");
+  return input;
+}
+
 function cleanUpResults(array) {
   let uniques = getUnique(array);
   uniques.sort(function(a, b) {
@@ -154,9 +152,3 @@ function timeFunction(fn) {
   let e = new Date();
   return e - s;
 }
-
-theThing1(wordsArray);
-//findMatches(wordsArray);
-// let time1 = timeFunction(theThing1);
-// let time2 = timeFunction(findMatches);
-// console.log(time1, time2);
