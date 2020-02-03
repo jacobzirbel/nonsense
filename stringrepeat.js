@@ -135,6 +135,14 @@ function buildInputArray(input) {
   return input;
 }
 
+function getCounts(array) {
+  var counts = {};
+  array.forEach(x => {
+    counts[x] = (counts[x] || 0) + 1;
+  });
+  return counts;
+}
+
 function cleanUpResults(array) {
   let uniques = getUnique(array);
   uniques.sort(function(a, b) {
