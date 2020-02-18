@@ -1,70 +1,155 @@
 ///////////////////////// EXECUTION /////////////////////////
 let input = `
 
-The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.
-
-We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness. Prudence, indeed, will dictate that Governments long established should not be changed for light and transient causes; and accordingly all experience hath shewn, that mankind are more disposed to suffer, while evils are sufferable, than to right themselves by abolishing the forms to which they are accustomed. But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism, it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security.--Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former Systems of Government. The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute Tyranny over these States. To prove this, let Facts be submitted to a candid world.
-
-He has refused his Assent to Laws, the most wholesome and necessary for the public good.
-
-He has forbidden his Governors to pass Laws of immediate and pressing importance, unless suspended in their operation till his Assent should be obtained; and when so suspended, he has utterly neglected to attend to them.
-
-He has refused to pass other Laws for the accommodation of large districts of people, unless those people would relinquish the right of Representation in the Legislature, a right inestimable to them and formidable to tyrants only.
-
-He has called together legislative bodies at places unusual, uncomfortable, and distant from the depository of their public Records, for the sole purpose of fatiguing them into compliance with his measures.
-
-He has dissolved Representative Houses repeatedly, for opposing with manly firmness his invasions on the rights of the people.
-
-He has refused for a long time, after such dissolutions, to cause others to be elected; whereby the Legislative powers, incapable of Annihilation, have returned to the People at large for their exercise; the State remaining in the mean time exposed to all the dangers of invasion from without, and convulsions within.
-
-He has endeavoured to prevent the population of these States; for that purpose obstructing the Laws for Naturalization of Foreigners; refusing to pass others to encourage their migrations hither, and raising the conditions of new Appropriations of Lands.
-
-He has obstructed the Administration of Justice, by refusing his Assent to Laws for establishing Judiciary powers.
-
-He has made Judges dependent on his Will alone, for the tenure of their offices, and the amount and payment of their salaries.
-
-He has erected a multitude of New Offices, and sent hither swarms of Officers to harrass our people, and eat out their substance.
-
-He has kept among us, in times of peace, Standing Armies without the Consent of our legislatures.
-
-He has affected to render the Military independent of and superior to the Civil power.
-
-He has combined with others to subject us to a jurisdiction foreign to our constitution, and unacknowledged by our laws; giving his Assent to their Acts of pretended Legislation:
-
-For Quartering large bodies of armed troops among us:
-
-For protecting them, by a mock Trial, from punishment for any Murders which they should commit on the Inhabitants of these States:
-
-For cutting off our Trade with all parts of the world:
-
-For imposing Taxes on us without our Consent:
-
-For depriving us in many cases, of the benefits of Trial by Jury:
-
-For transporting us beyond Seas to be tried for pretended offences
-
-For abolishing the free System of English Laws in a neighbouring Province, establishing therein an Arbitrary government, and enlarging its Boundaries so as to render it at once an example and fit instrument for introducing the same absolute rule into these Colonies:
-
-For taking away our Charters, abolishing our most valuable Laws, and altering fundamentally the Forms of our Governments:
-
-For suspending our own Legislatures, and declaring themselves invested with power to legislate for us in all cases whatsoever.
-
-He has abdicated Government here, by declaring us out of his Protection and waging War against us.
-
-He has plundered our seas, ravaged our Coasts, burnt our towns, and destroyed the lives of our people.
-
-He is at this time transporting large Armies of foreign Mercenaries to compleat the works of death, desolation and tyranny, already begun with circumstances of Cruelty & perfidy scarcely paralleled in the most barbarous ages, and totally unworthy the Head of a civilized nation.
-
-He has constrained our fellow Citizens taken Captive on the high Seas to bear Arms against their Country, to become the executioners of their friends and Brethren, or to fall themselves by their Hands.
-
-He has excited domestic insurrections amongst us, and has endeavoured to bring on the inhabitants of our frontiers, the merciless Indian Savages, whose known rule of warfare, is an undistinguished destruction of all ages, sexes and conditions.
-
-In every stage of these Oppressions We have Petitioned for Redress in the most humble terms: Our repeated Petitions have been answered only by repeated injury. A Prince whose character is thus marked by every act which may define a Tyrant, is unfit to be the ruler of a free people.
-
-Nor have We been wanting in attentions to our Brittish brethren. We have warned them from time to time of attempts by their legislature to extend an unwarrantable jurisdiction over us. We have reminded them of the circumstances of our emigration and settlement here. We have appealed to their native justice and magnanimity, and we have conjured them by the ties of our common kindred to disavow these usurpations, which, would inevitably interrupt our connections and correspondence. They too have been deaf to the voice of justice and of consanguinity. We must, therefore, acquiesce in the necessity, which denounces our Separation, and hold them, as we hold the rest of mankind, Enemies in War, in Peace Friends.
-
-We, therefore, the Representatives of the united States of America, in General Congress, Assembled, appealing to the Supreme Judge of the world for the rectitude of our intentions, do, in the Name, and by Authority of the good People of these Colonies, solemnly publish and declare, That these United Colonies are, and of Right ought to be Free and Independent States; that they are Absolved from all Allegiance to the British Crown, and that all political connection between them and the State of Great Britain, is and ought to be totally dissolved; and that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances, establish Commerce, and to do all other Acts and Things which Independent States may of right do. And for the support of this Declaration, with a firm reliance on the protection of divine Providence, we mutually pledge to each other our Lives, our Fortunes and our sacred Honor.
-
+Look, I was gonna go easy on you and not to hurt your feelings
+But I'm only going to get this one chance
+Something's wrong, I can feel it (Six minutes, Slim Shady, you're on)
+Just a feeling I've got, like something's about to happen, but I don't know what
+If that means, what I think it means, we're in trouble, big trouble,
+And if he is as bananas as you say, I'm not taking any chances
+You were just what the doctor ordered
+I'm beginning to feel like a Rap God, Rap God
+All my people from the front to the back nod, back nod
+Now who thinks their arms are long enough to slap box, slap box?
+They said I rap like a robot, so call me Rapbot
+But for me to rap like a computer must be in my genes
+I got a laptop in my back pocket
+My pen'll go off when I half-cock it
+Got a fat knot from that rap profit
+Made a living and a killing off it
+Ever since Bill Clinton was still in office
+With Monica Lewinsky feeling on his nut-sack
+I'm an MC still as honest
+But as rude and indecent as all hell syllables, killaholic (Kill 'em all with)
+This slickety, gibbedy, hibbedy hip hop
+You don't really wanna get into a pissing match with this rappidy brat
+Packing a Mac in the back of the Ac, backpack rap crap, yep, yackidy-yac
+And at the exact same time I attempt these lyrical acrobat stunts while I'm practicing
+That I'll still be able to break a motherfuckin' table
+Over the back of a couple of faggots and crack it in half
+Only realized it was ironic I was signed to Aftermath after the fact
+How could I not blow? All I do is drop F-bombs, feel my wrath of attack
+Rappers are having a rough time period, here's a Maxipad
+It's actually disastrously bad
+For the wack while I'm masterfully constructing this masterpiece as
+I'm beginning to feel like a Rap God, Rap God
+All my people from the front to the back nod, back nod
+Now who thinks their arms are long enough to slap box, slap box?
+Let me show you maintaining this shit ain't that hard, that hard
+Everybody want the key and the secret to rap immortality like I have got
+Well, to be truthful the blueprint's simply rage and youthful exuberance
+Everybody loves to root for a nuisance
+Hit the earth like an asteroid, did nothing but shoot for the moon since
+MC's get taken to school with this music
+'Cause I use it as a vehicle to bus the rhyme
+Now I lead a new school full of students
+Me? I'm a product of Rakim, Lakim Shabazz, 2Pac N-
+-W.A, Cube, hey, Doc, Ren, Yella, Eazy, thank you, they got Slim
+Inspired enough to one day grow up, blow up and be in a position
+To meet Run DMC and induct them into the motherfuckin' Rock n'
+Roll Hall of Fame
+Even though I walk in the church and burst in a ball of flames
+Only Hall of Fame I be inducted in is the alcohol of fame
+On the wall of shame
+You fags think it's all a game 'til I walk a flock of flames
+Off of planking, tell me what in the fuck are you thinking?
+Little gay looking boy
+So gay I can barely say it with a straight face looking boy
+You witnessing a mass occur
+Like you watching a church gathering take place looking boy
+Oy vey, that boy's gay, that's all they say looking boy
+You get a thumbs up, pat on the back
+And a "way to go" from your label everyday looking boy
+Hey, looking boy, what you say looking boy?
+I got a "hell yeah" from Dre looking boy
+I'mma work for everything I have
+Never ask nobody for shit, get outta my face looking boy
+Basically boy you're never gonna be capable
+To keep up with the same pace looking boy
+'Cause I'm beginning to feel like a Rap God, Rap God
+All my people from the front to the back nod, back nod
+The way I'm racing around the track, call me Nascar, Nascar
+Dale Earnhardt of the trailer park, the White Trash God
+Kneel before General Zod this planet's Krypton, no Asgard, Asgard
+So you be Thor and I'll be Odin, you rodent, I'm omnipotent
+Let off then I'm reloading immediately with these bombs I'm totin'
+And I should not be woken
+I'm the walking dead, but I'm just a talking head, a zombie floating
+But I got your mom deep throating
+I'm out my Ramen noodle, we have nothing in common, poodle
+I'm a doberman, pinch yourself in the arm and pay homage, pupil
+It's me, my honesty's brutal
+But it's honestly futile if I don't utilize what I do though
+For good at least once in a while
+So I wanna make sure somewhere in this chicken scratch I scribble and doodle
+Enough rhymes to maybe to try and help get some people through tough times
+But I gotta keep a few punchlines just in case 'cause even you unsigned
+Rappers are hungry looking at me like it's lunchtime
+I know there was a time where once I
+Was king of the underground, but I still rap like I'm on my Pharoahe Monch grind
+So I crunch rhymes, but sometimes when you combine
+Appeal with the skin color of mine
+You get too big and here they come trying to
+Censor you like that one line I said on "I'm Back" from the Mathers LP
+One when I tried to say "I'll take seven kids from Columbine
+Put 'em all in a line, add an AK-47, a revolver and a nine"
+See if I get away with it now that I ain't as big as I was, but I'm
+Morphin' into an immortal coming through the portal
+You're stuck in a time warp from 2004 though
+And I don't know what the fuck that you rhyme for
+You're pointless as Rapunzel with fucking cornrows
+You write normal, fuck being normal
+And I just bought a new Raygun from the future
+Just to come and shoot ya like when Fabolous made Ray J mad
+'Cause Fab said he looked like a fag at Maywhether's pad
+Singin' to a man while they played piano
+Man, oh man, that was a 24/7 special on the cable channel
+So Ray J went straight to the radio station the very next day
+"Hey, Fab, I'mma kill you"
+Lyrics coming at you at supersonic speed, (JJ Fad)
+Uh, sama lamaa duma lamaa you assuming I'm a human
+What I gotta do to get it through to you I'm superhuman
+Innovative and I'm made of rubber
+So that anything you say is ricocheting off of me and it'll glue to you
+I'm devastating, more than ever demonstrating
+How to give a motherfuckin' audience a feeling like it's levitating
+Never fading, and I know that the haters are forever waiting
+For the day that they can say I fell off, they'd be celebrating
+'Cause I know the way to get 'em motivated
+I make elevating music, you make elevator music
+Oh, he's too mainstream
+Well, that's what they do when they get jealous, they confuse it
+It's not hip hop, it's pop, 'cause I found a hella way to fuse it
+With rock, shock rap with Doc
+Throw on Lose Yourself and make 'em lose it
+I don't know how to make songs like that
+I don't know what words to use
+Let me know when it occurs to you
+While I'm ripping any one of these verses diverse as you
+It's curtains, I'm inadvertently hurtin' you
+How many verses I gotta murder to
+Prove that if you were half as nice, your songs you can sacrifice virgins too uh!
+School flunkie, pill junky
+But look at the accolades the skills brung me
+Full of myself, but still hungry
+I bully myself 'cause I make me do what I put my mind to
+And I'm a million leagues above you, ill when I speak in tongues
+But it's still tongue in cheek, fuck you
+I'm drunk so Satan take the fucking wheel, I'm asleep in the front seat
+Bumping Heavy D and the Boys, still chunky, but funky
+But in my head there's something I can feel tugging and struggling
+Angels fight with devils and, here's what they want from me
+They asking me to eliminate some of the women hate
+But if you take into consideration the bitter hatred I have
+Then you may be a little patient and more sympathetic to the situation
+And understand the discrimination
+But fuck it, life's handing you lemons, make lemonade then
+But if I can't batter the women how the fuck am I supposed to bake them a cake then?
+Don't mistake it for Satan
+It's a fatal mistake if you think I need to be overseas
+And take a vacation to trip a broad
+And make her fall on her face and don't be a retard
+Be a king? Think not, why be a king when you can be a God?
 
 `;
 
@@ -77,6 +162,8 @@ let wordsArray = buildInputArray(input);
 method33(wordsArray);
 
 ///////////////////////// METHOD 3 /////////////////////////
+// works, but don't include results contained in longer results
+
 function method33(inputArray) {
   let ret = [];
   let match = true;
@@ -91,44 +178,36 @@ function method33(inputArray) {
       ret.push(matches[i]);
     }
 
-    matches.forEach(e=>{
+    matches.forEach(e => {
       let c = 0;
-      phrasesOfiLength.forEach(ee =>
-        {
-          if(e == ee){
-            c++;
-          }
+      phrasesOfiLength.forEach(ee => {
+        if (e == ee) {
+          c++;
         }
-      );
-        obj[e] = c;
-    }
-      );
-      console.log(obj)
-;
+      });
+      obj[e] = c;
+    });
+
     //only continue if there is a new match
     let after = ret.length;
     if (after === before) {
       match = false;
     }
   }
-
+  console.log(obj);
   let finalResults = cleanUpResults(ret);
   return finalResults;
 }
 
-
-
-function method3(array){
+function method3(array) {
   allPhrasesArray = [];
-  for(let i = 2 ; i<array.length/2+1;i++){
+  for (let i = 2; i < array.length / 2 + 1; i++) {
     let temp = getPhrases(i, array);
-    temp.forEach(
-      e => {
-        allPhrasesArray.push(e);
-      }
-    )
+    temp.forEach(e => {
+      allPhrasesArray.push(e);
+    });
   }
-console.log(allPhrasesArray.length);
+  console.log(allPhrasesArray.length);
 }
 
 ///////////////////////// METHOD 1 /////////////////////////
@@ -243,8 +322,6 @@ function iPair(i, j, word) {
   this.J = j;
   this.phrase = word + " ";
 }
-
-
 
 ///////////////////////// GENERAL /////////////////////////
 
